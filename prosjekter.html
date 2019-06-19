@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styling/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Designverkstedet</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="./index.html"><img src="./assets/logo.png" alt="Logo - Designverkstedet"></a>
+        </div>
+        <div>  
+            <ul>
+                <li><a>Ola Nordmann</a></li>
+                <li>
+                    <a>EN/</a>
+                    <a>NO</a>
+                </li>
+            </ul>
+            <nav>
+                <ul>
+                    <li><a>Prosjekter</a></li>
+                    <li><a href="./aktiviteter.html">Aktiviteter</a></li>
+                    <li>Informasjon▼</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="mainContProjects">
+        <div>
+            <figure>
+                <div>
+                    
+                </div>
+                <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+                
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                <div>
+                    
+                </div>
+                <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+                </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+            <figure>
+                    <div>
+                    
+                        </div>
+                        <h1>Tittel uten navn</h1>
+                <div class="hover"></div>
+                <img src="./assets/deer.jpg">
+            </figure>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>Kontakt Oss</p>
+            <p>designverkstedet.ntnu@gmai.com</p>
+        </div>
+        <div>
+            <p>Adresse</p>
+            <p>NTNU Gjøvik</p>
+            <p>Teknologivegen 22</p>
+            <p>2815 Gjøvik</p>
+        </div>
+    </footer>
+    <script>
+        let hoverbox = document.querySelectorAll(".hover");
+        
+        hoverbox.forEach(e => {
+            e.addEventListener("mouseover", e => {
+                console.log(e.path[1].children[0])
+                e.path[1].children[0].style.opacity = 0.5
+                e.path[1].children[0].style.transition = "0.7s ease"
+            })
+        });
+        hoverbox.forEach(e => {
+            e.addEventListener("mouseout", e => {
+                console.log(e.path[1].children[0])
+                e.path[1].children[0].style.opacity = 0
+            })
+        });
+    </script>
+    
+</body>
+</html>

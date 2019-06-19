@@ -1,0 +1,426 @@
+body {
+    font-family: Helvetica;
+    margin: 0px;
+}
+
+a:visited {
+    color: #6C6C6C;
+}
+a {
+    text-decoration: none;
+}
+
+
+/*header for all pages */
+
+
+header {
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    
+}
+
+header > div:nth-child(1) {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    padding-left: 4.2vw;
+}
+
+header > div:nth-child(1) > a > img {
+    padding-top: 14px;
+    width:75px;
+    
+}
+
+
+header > div:nth-child(2) {
+ 
+    color: #6C6C6C;
+    margin-right: 2vw;
+    margin-top: 1vh;
+    overflow: initial;
+    height: fit-content;
+
+}
+header > div:nth-child(2) > ul {
+    display: grid;
+    grid-template-columns:  repeat(3, 13vw);
+    list-style: none;
+    padding: 0%;
+    text-align: right;
+    margin-top: 0%;
+    margin-bottom: 1vh;
+    
+    
+}
+header > div:nth-child(2) > ul > li:nth-child(1) {
+    grid-column: 2/3;
+    font-size: 15px;
+}
+header > div:nth-child(2) > ul > li:nth-child(2) {
+    grid-column: 3/4;
+    font-size: 15px;
+}
+
+header > div:nth-child(2) > nav > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-top: 3vh;
+    padding: 0%;
+    text-align: right;
+    font-size: 18px;
+    letter-spacing: 1px;
+    height:5vh;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+.dropdown-content {
+    display: none;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header > form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+
+    display: none;
+    position: absolute;
+    height: 36vh;
+    width: 20vw;
+    background-color: white;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 20px 10px 20px;
+
+    top: 20vh;
+
+}
+header > form >  button {
+    align-self: center;
+}
+header > form > div:nth-child(1) {
+    display: flex;
+    flex-direction: inherit;
+}
+
+header > form > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+}
+
+
+header > form > div:nth-child(1) > input {
+    height: 30px;
+    width: 18vw;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+header > form > button {
+    width: 100px;
+    height: 30px;
+    background-color: #EA5C1A;
+}
+
+
+/*body of index.html */
+
+.mainContLandingpage {
+    display: grid;
+    grid-template-rows: 84vh 84vh;
+    grid-template-columns: auto;
+    justify-items: center;
+    
+
+}
+
+.mainContLandingpage > img {
+    width: 71.5vw;
+    height: 77vh;
+    object-fit: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: -1;
+}
+
+.mainContLandingpage > div {
+    display: grid;
+    grid-template-columns: repeat(3, 23.7vw);
+    justify-content: center;
+
+}
+.mainContLandingpage > div > figure {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    color:  #EA5C1A;
+}
+.mainContLandingpage > div > figure > figcaption > h2{
+    font-family: 'Helvetica';
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.mainContLandingpage > div > figure > figcaption > p:nth-child(2){
+    color: grey;
+}
+.mainContLandingpage > div > figure > figcaption > p:nth-child(3){
+    font-family: 'Verdana';
+    color: black;
+    font-size: 15px;
+}
+.mainContLandingpage > div > figure > img{
+    object-fit: none;
+    height: 20vw;
+    width: 20vw;
+    
+    
+}
+.mainContLandingpage > div > figure > figcaption{
+    width: 20vw;
+}
+
+.mainContLandingpage > div > figure:nth-child(1) {
+    align-items: flex-start;
+}
+
+.mainContLandingpage > div > figure:nth-child(2) {
+    align-items: center;
+}
+
+.mainContLandingpage > div > figure:nth-child(3) {
+    align-items: flex-end;
+}
+
+
+
+
+
+
+/* body of events*/
+
+.mainContEvents {
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContEvents > div:nth-child(1) {
+    width: 55vw;
+    margin-right: 6vw;
+    margin-bottom: 80px;
+}
+
+.mainContEvents > div:nth-child(1)> h1 {
+    font-size: 50px;
+    color:  #EA5C1A;
+}
+.mainContEvents > div:nth-child(1)> p {
+    font-size: 25px;
+    font-family: 'Verdana';
+}
+
+.mainContEvents > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*calendar*/
+
+
+.event {
+    display:flex;
+    margin-bottom: 6vh;
+}
+
+.event > div:nth-child(1) {
+    background-color:#EA5C1A;
+    height: 179px;
+    width: 198px;
+}
+
+.event > div:nth-child(2) {
+    width: 35vw;
+}
+
+.event h2, .event p {
+    margin: 0px 0px 20px 40px;
+}
+
+.event h2 {
+    font-size: 35px;
+    color:#EA5C1A;
+    font-family: 'helvetica';
+}
+
+.event p {
+    font-size: 25px;
+    font-family: 'Verdana';
+    font-weight: 200;
+}
+
+.event p:nth-child(3) {
+    text-align: right;
+    color: #EA5C1A;
+    text-decoration: underline;
+}
+
+.event h3 {
+    font-size: 70px;
+    text-align: -webkit-center;
+    margin: 5px 0px 0px 0px;
+    color: white;
+}
+
+
+
+
+
+/*maincontent-projects*/
+.mainContProjects {
+    height: 260vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+}
+.mainContProjects > div {
+    display: grid;
+    grid-template-rows: repeat(6, 40vh);
+    grid-template-columns: 30vw 30vw;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.hover:hover {
+    opacity: 0;
+    transition: .5s ease;   
+}
+
+.hover {
+    background-color: black;
+    opacity: 0.5;
+    
+    width: 30vw;
+    height:40vh;
+
+    position: absolute;
+
+    transition: .5s ease;  
+}
+
+.mainContProjects >div > figure > h1 {
+    margin: 0px;
+    text-transform: uppercase;
+    position: relative;
+    color: white;
+    z-index: 2;
+    left: 16px;
+    top: 38vh;
+    font-size: 30px;
+}
+
+.mainContProjects > div > figure > div:nth-child(1) {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 30vw;
+    height: 11%;
+    
+}
+
+
+
+.mainContProjects > div > figure, .mainContProjects > div > figure > img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+   
+}
+
+
+/*publish page*/
+
+.mainContPublish > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainContPublish textarea {
+    width: 50%;
+    margin-right: 5vw;
+    height: 22vh;
+}
+
+.mainContPublish > h1 {
+    color: #EA5C1A;
+    text-transform: uppercase;
+    margin-left: 22vw;
+}
+
+.topBtns {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 28vw);
+    grid-template-rows: repeat(3, 14vh);
+}
+
+.topBtns > div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.topBtns > div > input {
+    height: 5vh;
+    width: 80%;
+}
+
+.radioBtns {
+    display: flex;
+    justify-content: center;
+    margin-left: 17vw;
+}
+
+
+/*footer*/
+
+
+footer{
+    background-color: #EA5C1A;
+    padding: 20px;
+}
+
+footer > div{
+    color: white;
+    font-size: 15px;
+    width: 10vw;
+    margin-left: 12vw;
+    margin-bottom: 20px;
+}
+footer > div > p {
+    margin: 5px;
+}
+
+footer > div > p:nth-child(1) {
+    font-weight: bold;
+    text-transform: uppercase;
+}
